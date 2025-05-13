@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(31, 41, 55, 0.95);
+  padding: 1rem 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #e5e7eb;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #f59e0b;
+}
+
+/* Mobile Menu */
+#mobile-menu-button {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #e5e7eb;
+}
+
+#mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #1f2937;
+  position: absolute;
+  right: 1rem;
+  top: 100%;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+#mobile-menu a {
+  margin-bottom: 1rem;
+  color: #e5e7eb;
+}
+
+#mobile-menu a:hover {
+  color: #f59e0b;
+}
+
+/* Hero Section */
+.hero {
+  padding: 8rem 1rem 5rem;
+  background: linear-gradient(to right, #111827, #1f2937);
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #f59e0b;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #d97706;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services .service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Button */
+.contact-button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9999px;
+  transition: background 0.3s;
+}
+
+.contact-button:hover {
+  background: #2563eb;
+}
+
+/* Footer */
+footer {
+  background: #1f2937;
+  color: #d1d5db;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  #mobile-menu-button {
+    display: block;
+  }
+
+  #mobile-menu.open {
+    display: flex;
+  }
+}
